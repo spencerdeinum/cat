@@ -4,6 +4,7 @@ all: build compile test
 
 build:
 	@mkdir -p bin
+	echo "Hello, World!\ntesting dat cat." > bin/test.txt
 
 compile:
 	cc $(CFLAGS) cat.c -o bin/cat
@@ -14,3 +15,6 @@ test:
 
 clean:
 	rm -rf bin
+
+run: build compile
+	./bin/cat ./bin/test.txt ./bin/test.txt
