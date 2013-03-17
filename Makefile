@@ -1,4 +1,4 @@
-CFLAGS=-g -Wall -Wextra
+CFLAGS=-g -Wall -Wextra -pedantic
 
 all: build compile test
 
@@ -17,4 +17,4 @@ clean:
 	rm -rf bin
 
 run: build compile
-	./bin/cat ./bin/test.txt ./bin/test.txt
+	./bin/cat -n -b ./bin/test.txt ./bin/test.txt
