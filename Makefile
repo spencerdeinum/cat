@@ -1,4 +1,4 @@
-CFLAGS=-g -Wall -Wextra -pedantic
+CFLAGS=-std=c99 -g -Wall -Wextra -pedantic
 
 all: build compile test
 
